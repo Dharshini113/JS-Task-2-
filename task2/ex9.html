@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+           let acc={
+            name:"john", balance:3000,
+            deposit(amount){
+                this.balance=this.balance+amount;
+                return this.balance+amount;
+            },
+            withdraw(amount){
+                if(amount<this.balance){
+                    this.balance=this.balance-amount;
+                    return "Your money has been withdrawn. Balance: "+this.balance;
+                }
+                else return "No sufficient balance";
+            }
+           };
+           console.log("Balance : "+acc.balance)
+           console.log(acc.deposit(3000));
+           console.log(acc.withdraw(4000));
+        </script>
+    </head>
+</html>

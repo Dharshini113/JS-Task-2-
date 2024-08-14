@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let person={
+                age:65,
+                pname:"Jack",
+                curage(){
+                    return ++this.age;
+                },
+                preage(){
+                    return --this.age;
+                },
+                greet(){
+                    return "greet "+this.pname;
+                }
+            };
+            console.log(person.greet());
+            console.log(person.curage());
+            console.log(person.preage());
+        </script>
+    </head>
+</html>

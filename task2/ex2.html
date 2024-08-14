@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let obj={
+                title:"Life of Pi",
+                author:"Yann Martel",
+                published:2001,
+                getsummary:function(){
+                    return "The book "+this.title+" is amazing.";
+                },
+                period:function(){
+                    return new Date().getFullYear();
+                }
+            };
+            console.log(obj.getsummary());
+            console.log(obj.period()-obj.published);
+        </script>
+    </head>
+</html>

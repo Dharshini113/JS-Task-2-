@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let circle={
+                r:7,
+                dia(){
+                    return 2*this.radius;
+                },
+                area(){
+                    return Math.PI*this.r*this.r;
+                },
+                cir(){
+                    return 2*Math.PI*this.r;
+                }
+            };
+            console.log("Radius :"+circle.r);
+            console.log("Area : "+circle.area());
+            console.log("Diameter : "+circle.dia());
+            console.log("circumference : "+circle.cir());
+        </script>
+    </head>
+</html>
